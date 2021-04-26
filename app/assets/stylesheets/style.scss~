@@ -1,0 +1,36 @@
+html, body{
+	margin: 0px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+.no-margin{
+	margin:0px;
+}
+
+#logo{
+	font-size: 1.2em;
+}
+
+// eliminar viñetas
+ul {
+	list-style: none;
+}
+
+a, a:visited{
+	color:inherit !important;
+	text-decoration:none;
+}
+
+
+.be-red{
+	background-color: #E74C3C;
+}
+
+.white{
+	color: #ECF0F1;
+}
+
+.large-padding{
+	padding:8px 5px;
+}
