@@ -31,6 +31,12 @@ rake db:migrate
 rails console
 Article.all
 
+
+### 9.- Curso Ruby on Rails 4 desde cero - Enviar datos al controlador
+
+
+
+
 # rutas
 https://guides.rubyonrails.org/routing.html
 
