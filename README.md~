@@ -49,3 +49,18 @@ Article.create(title:"Primer articulo", body:"Bienvenidos a mi blog 1", visits_c
 Article.create(title:"Segundo articulo", body:"Bienvenidos a mi blog 2", visits_count:0)
 
 
+### 10.- Curso Ruby on Rails 4 desde cero - Validaciones
+
+Article.last.destroy
+Article.last
+
+### 11.- Curso Ruby on Rails 4 desde cero - ActiveRecord básico
+Article.all.count
+Article.all.size
+Article.find(2)
+Article.find_by(title: "Segundo articulo")
+Article.where("title LIKE ?", "%Articulo%")
+Article.where("title LIKE ?", "%Articulo%").count
+
+
+

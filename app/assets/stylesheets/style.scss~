@@ -34,9 +34,16 @@ a, a:visited{
 .large-padding{
 	padding:8px 5px;
 }
+
+
 .boton-guardar:hover{
 background-color: violet;
 }
+
+.field{
+	margin-top: 1rem;
+}
+
 .boton-guardar{
 background-color: blue;
 color:white;
@@ -49,6 +56,10 @@ font-size:1.2em;
 }
 
 
+
+.boton-reset:hover{
+background-color: violet;
+}
 .boton-reset{
 background-color: red;
 color:white;
