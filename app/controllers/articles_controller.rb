@@ -16,6 +16,8 @@ class ArticlesController < ApplicationController
 	def create
 	#@article.valid
 	#@article.invalid
+	#@article = Article.new(params[:article]){title: "titulo",body:"Cuerpo"}}
+	#article = Article.new(article_params)
 		@article = Article.new(title: params[:article][:title], body:params[:article][:body], visits_count: 0)
 		if @article.save
 			redirect_to @article	
@@ -34,5 +36,10 @@ class ArticlesController < ApplicationController
 #PUT /articles/:id
 	def update
 		#@article.update_attributes({title:"Nuevo titulo", body:"", visits_count: 0})
+	end
+
+	def article_params	
+		
+		params.require(:article).permit(:title, :body)	
 	end
 end
