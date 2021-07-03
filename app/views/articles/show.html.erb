@@ -1,1 +1,8 @@
-<%= @article.inspect %>
+<h1><%= @article.title %></h1>
+<div>
+	<%= @article.body %>
+</div>
+<p></p>
+<div>
+	<%= link_to "Editar", edit_article_path(@article), class:"boton-guardar" %>
+</div>

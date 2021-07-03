@@ -1,35 +1,7 @@
 <div 
 	class="card card-default" 
 	style="font-style:italic; display:block;border: #ccc 1px solid;width:80%;height:500px; margin:auto;">
-	<div class="card-body">
-		<div class="card-header">
-			<h2 class="text-center" style="text-align:center">
-				Formulario de crear articulos
-			</h2>		
-		</div>
-		<p></p>
-		<div style="padding:5px;text-align:center">
-			<%= form_for(@article) do |f| %>
-				<div class="field form-group">
-					<% @article.errors.full_messages.each do |message|  %>
-						<div class="be-red white to">
-							* <%= message %>
-						</div>					
-					<%end%>				
-				</div>				
-				<div class="field form-group">
-					<label for="ltitulo">Título</label>
-					<%= f.text_field :title, placeholder: "Título", class:"form-control", style:"font-style:italic;" %>			
-				</div>
-				<div class="field form-group">
-					<label for="lcontenido">Contenido</label>
-					<%= f.text_area :body, placeholder: "Escriba el articulo", class:"form-control", style:"height:300px;font-style:italic;" %>
-				</div>
-				<div class="field">
-					<%= f.submit "Guardar", class:"boton-guardar" %>
-					<input type="reset" class="boton-reset" value="reset" />
-				</div>
-			<%end%>
-		</div>
-	</div>
+	
+			<%= render "form", name:"Formulario Crear" %>
+		
 </div>

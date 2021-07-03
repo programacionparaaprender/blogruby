@@ -37,6 +37,7 @@ Article.all
 
 
 
+
 # rutas
 https://guides.rubyonrails.org/routing.html
 
@@ -62,6 +63,25 @@ Article.find_by(title: "Segundo articulo")
 Article.where("title LIKE ?", "%Articulo%")
 Article.where("title LIKE ?", "%Articulo%").count
 Article.where.not("id = 1")
+
+
+### 13.- Curso Ruby on Rails 4 desde cero - Vistas parciales
+para no repetir código
+se creo _form.html.erb
+
+
+14.- Curso Ruby on Rails 4 desde cero - Autenticación Usuarios 1:2
+buscar devise en https://rubygems.org/
+En el Gemfile
+agregar el gem "devise"
+luego ejecutar
+bundle install 
+bundle lock --add-platform x86-mingw32 x86-mswin32 x64-mingw32 java
+
+
+
+
+
 
 
 

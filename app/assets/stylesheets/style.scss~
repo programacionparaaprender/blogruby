@@ -22,6 +22,9 @@ a, a:visited{
 	text-decoration:none;
 }
 
+.red{
+background-color:red;
+}
 
 .be-red{
 	background-color: #E74C3C;
@@ -42,6 +45,10 @@ background-color: violet;
 
 .field{
 	margin-top: 1rem;
+}
+
+.top-space{
+	margin-top:1rem;
 }
 
 .boton-guardar{

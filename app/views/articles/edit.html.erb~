@@ -1,7 +1,7 @@
 <div 
 	class="card card-default" 
 	style="font-style:italic; display:block;border: #ccc 1px solid;width:80%;height:500px; margin:auto;">
+
+	<%= render "form", name:"Formulario Editar" %>
 	
-			<%= render "form", {name:"Formulario Crear",otra_variable:""}  %>
-		
 </div>

@@ -12,6 +12,10 @@ class ArticlesController < ApplicationController
 		@article = Article.new
 	end
 	
+	def edit
+		@article = Article.find(params[:id])
+	end	
+	
 #POST /articles
 	def create
 	#@article.valid
@@ -35,6 +39,12 @@ class ArticlesController < ApplicationController
 	
 #PUT /articles/:id
 	def update
+		@article = Article.find(params[:id])
+		if @article.update(article_params)
+			redirect_to @article
+		else
+			render :edit
+		end
 		#@article.update_attributes({title:"Nuevo titulo", body:"", visits_count: 0})
 	end
 
